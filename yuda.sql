@@ -30,9 +30,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `barangs` (
   `id` int(10) UNSIGNED NOT NULL,
-  `Kode_ticket` int(11) NOT NULL,
-  `Nama_penonton` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Harga` int(11) NOT NULL,
+  `nama_barang` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `harga_barang` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -41,12 +40,12 @@ CREATE TABLE `barangs` (
 -- Dumping data for table `barangs`
 --
 
-INSERT INTO `barangs` (`id`, `Kode_ticket`, `Nama_penonton`, `Harga`, `created_at`, `updated_at`) VALUES
-(1, 10, 'ujang', 50000, NULL, NULL),
-(2, 11, 'rudi', 75000, NULL, NULL),
-(3, 12, 'diki', 50000, NULL, NULL),
-(4, 13, 'zaky', 50000, NULL, NULL),
-(5, 14, 'taufik', 75000, NULL, NULL);
+INSERT INTO `barangs` (`id`, `nama_barang`, `harga_barang`, `created_at`, `updated_at`) VALUES
+(1, 10, 'gitar', 1200000', NULL, NULL),
+(2, 11, 'tas', 50000, NULL, NULL),
+(3, 12, 'lemari', 14000000, NULL, NULL),
+(4, 13, 'baju',100000 , NULL, NULL),
+(5, 14, 'kulkas', 14500000, NULL, NULL);
 
 -- --------------------------------------------------------
 
